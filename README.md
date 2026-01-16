@@ -9,6 +9,12 @@
 </p>
 
 <p align="center">
+  <a href="https://code-sampler.pre.dev">
+    <img src="https://img.shields.io/badge/🚀_Try_it_Free-code--sampler.pre.dev-blue?style=for-the-badge" alt="Try it Free" />
+  </a>
+</p>
+
+<p align="center">
   <a href="#features">Features</a> •
   <a href="#how-it-works">How It Works</a> •
   <a href="#getting-started">Getting Started</a> •
@@ -36,6 +42,8 @@
 ## Overview
 
 AI Training Code Sampler is a browser-based tool that helps developers prepare their code repositories for AI training data evaluation. Upload your ZIP file, curate your code sample, and download a properly formatted JSONL package ready for submission.
+
+**👉 Use it for free at [code-sampler.pre.dev](https://code-sampler.pre.dev)**
 
 **All processing happens locally in your browser — your code never leaves your machine.**
 
