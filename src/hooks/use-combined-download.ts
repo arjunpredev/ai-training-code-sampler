@@ -9,7 +9,6 @@ import {
 import { encodeFilesWithStats } from '../lib/encoding-utils'
 import { filterCodeFiles } from '../lib/file-filter-utils'
 import { sampleCodeFiles } from '../lib/sampling-utils'
-import { PRIORITY_LANGUAGES } from '../lib/language-utils'
 import { downloadZip } from '../lib/download-utils'
 import { generateDownloadFilename } from '../lib/download-utils'
 
@@ -83,7 +82,6 @@ export function useCombinedDownload(): UseCombinedDownloadReturn {
       setState(prev => ({ ...prev, progress: 30 }))
       const { samples } = sampleCodeFiles(codeFiles, {
         maxFiles: 5000,
-        priorityLanguages: [...PRIORITY_LANGUAGES],
         prioritizeDiversity: true
       })
 
