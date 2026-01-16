@@ -1,0 +1,176 @@
+/**
+ * Mapping of file extensions to language names
+ */
+export const EXTENSION_TO_LANGUAGE: Record<string, string> = {
+  // Go
+  '.go': 'Go',
+  // Rust
+  '.rs': 'Rust',
+  // Kotlin
+  '.kt': 'Kotlin',
+  '.kts': 'Kotlin',
+  // Lua
+  '.lua': 'Lua',
+  // MATLAB
+  '.m': 'MATLAB',
+  '.mat': 'MATLAB',
+  '.mlx': 'MATLAB',
+  // Objective-C
+  '.mm': 'Objective-C',
+  // Dart
+  '.dart': 'Dart',
+  // Assembly
+  '.asm': 'Assembly',
+  '.s': 'Assembly',
+  '.S': 'Assembly',
+  // Ruby
+  '.rb': 'Ruby',
+  '.rake': 'Ruby',
+  '.gemspec': 'Ruby',
+  // Swift
+  '.swift': 'Swift',
+  // R
+  '.r': 'R',
+  '.R': 'R',
+  '.rmd': 'R',
+  '.Rmd': 'R',
+  // C++
+  '.cpp': 'C++',
+  '.cc': 'C++',
+  '.cxx': 'C++',
+  '.c++': 'C++',
+  '.hpp': 'C++',
+  '.hh': 'C++',
+  '.hxx': 'C++',
+  '.h++': 'C++',
+  // C
+  '.c': 'C',
+  '.h': 'C',
+  // TypeScript
+  '.ts': 'TypeScript',
+  '.tsx': 'TypeScript',
+  '.mts': 'TypeScript',
+  '.cts': 'TypeScript',
+  // JavaScript
+  '.js': 'JavaScript',
+  '.jsx': 'JavaScript',
+  '.mjs': 'JavaScript',
+  '.cjs': 'JavaScript',
+  // Python
+  '.py': 'Python',
+  '.pyw': 'Python',
+  '.pyi': 'Python',
+  // Java
+  '.java': 'Java',
+  // C#
+  '.cs': 'C#',
+  // PHP
+  '.php': 'PHP',
+  // Scala
+  '.scala': 'Scala',
+  '.sc': 'Scala',
+  // Shell
+  '.sh': 'Shell',
+  '.bash': 'Shell',
+  '.zsh': 'Shell',
+  '.fish': 'Shell',
+  // SQL
+  '.sql': 'SQL',
+  // HTML
+  '.html': 'HTML',
+  '.htm': 'HTML',
+  // CSS
+  '.css': 'CSS',
+  '.scss': 'SCSS',
+  '.sass': 'SCSS',
+  '.less': 'Less',
+  // Config
+  '.json': 'JSON',
+  '.yaml': 'YAML',
+  '.yml': 'YAML',
+  '.xml': 'XML',
+  '.toml': 'TOML',
+  // Markdown
+  '.md': 'Markdown',
+  '.markdown': 'Markdown',
+  // Perl
+  '.pl': 'Perl',
+  '.pm': 'Perl',
+  // Haskell
+  '.hs': 'Haskell',
+  '.lhs': 'Haskell',
+  // Elixir
+  '.ex': 'Elixir',
+  '.exs': 'Elixir',
+  // Erlang
+  '.erl': 'Erlang',
+  '.hrl': 'Erlang',
+  // Clojure
+  '.clj': 'Clojure',
+  '.cljs': 'Clojure',
+  '.cljc': 'Clojure',
+  '.edn': 'Clojure',
+  // F#
+  '.fs': 'F#',
+  '.fsx': 'F#',
+  '.fsi': 'F#',
+  // OCaml
+  '.ml': 'OCaml',
+  '.mli': 'OCaml',
+  // Groovy
+  '.groovy': 'Groovy',
+  '.gvy': 'Groovy',
+  '.gy': 'Groovy',
+  '.gsh': 'Groovy',
+  // Zig
+  '.zig': 'Zig',
+  // Nim
+  '.nim': 'Nim',
+  '.nims': 'Nim',
+  // V
+  '.v': 'V',
+  // Julia
+  '.jl': 'Julia',
+  // Fortran
+  '.f': 'Fortran',
+  '.for': 'Fortran',
+  '.f90': 'Fortran',
+  '.f95': 'Fortran',
+  '.f03': 'Fortran',
+  '.f08': 'Fortran',
+  // COBOL
+  '.cob': 'COBOL',
+  '.cbl': 'COBOL',
+  // Ada
+  '.adb': 'Ada',
+  '.ads': 'Ada',
+  // Pascal
+  '.pas': 'Pascal',
+  '.pp': 'Pascal',
+  // Prolog
+  '.pro': 'Prolog',
+  // Lisp
+  '.lisp': 'Lisp',
+  '.lsp': 'Lisp',
+  '.cl': 'Lisp',
+  // Scheme
+  '.scm': 'Scheme',
+  '.ss': 'Scheme',
+  // Racket
+  '.rkt': 'Racket',
+  // D
+  '.d': 'D',
+  // Crystal
+  '.cr': 'Crystal',
+}
+
+/**
+ * Detects the programming language of a file based on its extension
+ * @param filename - The filename to detect language for
+ * @returns The detected language name, or 'Unknown' if not recognized
+ */
+export function detectLanguage(filename: string): string {
+  const extension = filename.substring(filename.lastIndexOf('.')).toLowerCase()
+  return EXTENSION_TO_LANGUAGE[extension] || 'Unknown'
+}
+
