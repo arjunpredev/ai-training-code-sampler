@@ -170,7 +170,7 @@ export function UploadDropzone({
 												: "text-zinc-300 group-hover:text-zinc-200"
 										}`}
 									>
-										{isDragging ? "Drop your ZIP here" : "Drop ZIP file here"}
+										{isDragging ? "Drop it here" : "Drop Zipped Repo here"}
 									</p>
 									<p className="text-xs sm:text-sm text-zinc-600 mt-1">
 										or click to browse
